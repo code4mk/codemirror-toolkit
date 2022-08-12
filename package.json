@@ -1,0 +1,11 @@
+{
+  "name": "codemirror-toolkit",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/code4mk/codemirror-toolkit.git",
+  "author": "Mostafa Kamal <hiremostafa@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "codemirror": "^6.0.1"
+  }
+}
