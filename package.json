@@ -1,11 +1,24 @@
 {
-  "name": "codemirror-toolkit",
-  "version": "1.0.0",
-  "main": "index.js",
+  "name": "@code4mk/codemirror-toolkit",
+  "version": "0.0.4",
   "repository": "https://github.com/code4mk/codemirror-toolkit.git",
   "author": "Mostafa Kamal <hiremostafa@gmail.com>",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "exports": {
+    "import": "./dist/index.js",
+    "require": "./dist/index.cjs"
+  },
+  "types": "dist/index.d.ts",
+  "module": "dist/index.js",
+  "sideEffects": false,
+  "scripts": {
+    "test": "cm-runtests",
+    "prepare": "cm-buildhelper src/index.ts"
+  },
   "license": "MIT",
   "dependencies": {
+    "@codemirror/buildhelper": "^0.1.16",
     "codemirror": "^6.0.1"
   }
 }
